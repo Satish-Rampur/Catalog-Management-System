@@ -1,0 +1,782 @@
+2024-08-03T12:17:23.226+05:30  INFO 17640 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Starting CatalogManagementApplication using Java 20.0.2 with PID 17640 (C:\Users\LENOVO\Downloads\catalog-management\catalog-management\target\classes started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T12:17:23.250+05:30 DEBUG 17640 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T12:17:23.256+05:30  INFO 17640 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T12:17:23.382+05:30  INFO 17640 --- [catalog-management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-03T12:17:23.382+05:30  INFO 17640 --- [catalog-management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-03T12:17:25.077+05:30  INFO 17640 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T12:17:25.201+05:30  INFO 17640 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interface.
+2024-08-03T12:17:26.794+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-03T12:17:26.824+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T12:17:26.825+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T12:17:26.942+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-03T12:17:26.943+05:30  INFO 17640 --- [catalog-management] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3560 ms
+2024-08-03T12:17:27.467+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T12:17:27.629+05:30  INFO 17640 --- [catalog-management] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T12:17:27.754+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T12:17:28.437+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T12:17:28.487+05:30  INFO 17640 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T12:17:29.580+05:30  INFO 17640 --- [catalog-management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5acd5d46
+2024-08-03T12:17:29.584+05:30  INFO 17640 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T12:17:29.680+05:30  WARN 17640 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T12:17:29.683+05:30  WARN 17640 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T12:17:31.221+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T12:17:31.302+05:30  INFO 17640 --- [catalog-management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T12:17:31.995+05:30  WARN 17640 --- [catalog-management] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T12:17:32.617+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T12:17:32.669+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-03T12:17:32.686+05:30  INFO 17640 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Started CatalogManagementApplication in 10.455 seconds (process running for 12.301)
+2024-08-03T12:24:48.645+05:30  INFO 17640 --- [catalog-management] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-03T12:24:48.645+05:30  INFO 17640 --- [catalog-management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-03T12:24:48.645+05:30  INFO 17640 --- [catalog-management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-08-03T12:26:51.807+05:30  INFO 17640 --- [catalog-management] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (0 additions, 6 deletions, 1 modification)
+2024-08-03T12:26:51.955+05:30  INFO 17640 --- [catalog-management] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T12:26:51.960+05:30  INFO 17640 --- [catalog-management] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T12:26:51.978+05:30  INFO 17640 --- [catalog-management] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T12:26:52.125+05:30  INFO 17640 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Starting CatalogManagementApplication using Java 20.0.2 with PID 17640 (C:\Users\LENOVO\Downloads\catalog-management\catalog-management\target\classes started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T12:26:52.125+05:30 DEBUG 17640 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T12:26:52.126+05:30  INFO 17640 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T12:26:52.577+05:30  INFO 17640 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T12:26:52.580+05:30  INFO 17640 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2024-08-03T12:26:52.796+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-03T12:26:52.797+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T12:26:52.797+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T12:26:52.827+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-03T12:26:52.827+05:30  INFO 17640 --- [catalog-management] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 696 ms
+2024-08-03T12:26:52.890+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T12:26:52.894+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T12:26:52.909+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T12:26:52.910+05:30  INFO 17640 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-08-03T12:26:52.936+05:30  INFO 17640 --- [catalog-management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35fc7740
+2024-08-03T12:26:52.937+05:30  INFO 17640 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-08-03T12:26:52.939+05:30  WARN 17640 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T12:26:52.939+05:30  WARN 17640 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T12:26:52.969+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T12:26:52.970+05:30  INFO 17640 --- [catalog-management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T12:26:53.046+05:30  WARN 17640 --- [catalog-management] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T12:26:53.354+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T12:26:53.383+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-03T12:26:53.389+05:30  INFO 17640 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Started CatalogManagementApplication in 1.325 seconds (process running for 573.005)
+2024-08-03T12:26:53.394+05:30  INFO 17640 --- [catalog-management] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-03T12:26:57.828+05:30  INFO 17640 --- [catalog-management] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 6 class path changes (6 additions, 0 deletions, 0 modifications)
+2024-08-03T12:26:57.969+05:30  INFO 17640 --- [catalog-management] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T12:26:57.971+05:30  INFO 17640 --- [catalog-management] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-08-03T12:26:57.987+05:30  INFO 17640 --- [catalog-management] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-08-03T12:26:58.119+05:30  INFO 17640 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Starting CatalogManagementApplication using Java 20.0.2 with PID 17640 (C:\Users\LENOVO\Downloads\catalog-management\catalog-management\target\classes started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T12:26:58.121+05:30 DEBUG 17640 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T12:26:58.121+05:30  INFO 17640 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T12:26:58.597+05:30  INFO 17640 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T12:26:58.611+05:30  INFO 17640 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2024-08-03T12:26:58.829+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-03T12:26:58.833+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T12:26:58.833+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T12:26:58.866+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-03T12:26:58.867+05:30  INFO 17640 --- [catalog-management] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 741 ms
+2024-08-03T12:26:58.925+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T12:26:58.929+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T12:26:58.944+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T12:26:58.948+05:30  INFO 17640 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-08-03T12:26:58.968+05:30  INFO 17640 --- [catalog-management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5fe4d551
+2024-08-03T12:26:58.969+05:30  INFO 17640 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-08-03T12:26:58.970+05:30  WARN 17640 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T12:26:58.970+05:30  WARN 17640 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T12:26:59.104+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T12:26:59.126+05:30  INFO 17640 --- [catalog-management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T12:26:59.285+05:30  WARN 17640 --- [catalog-management] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T12:26:59.511+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T12:26:59.538+05:30  INFO 17640 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-03T12:26:59.543+05:30  INFO 17640 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Started CatalogManagementApplication in 1.471 seconds (process running for 579.158)
+2024-08-03T12:26:59.546+05:30  INFO 17640 --- [catalog-management] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-03T12:42:17.611+05:30  INFO 17640 --- [catalog-management] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-03T12:42:17.611+05:30  INFO 17640 --- [catalog-management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-03T12:42:17.614+05:30  INFO 17640 --- [catalog-management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-03T12:42:17.779+05:30  INFO 17640 --- [catalog-management] [http-nio-8080-exec-2] c.e.c.service.ProductService             : Adding product: Product(id=null, name=iphone 12, brand=Apple, description=8GB RAM, price=1000.0, quantity=1, category=IOS, dateAdded=null)
+2024-08-03T12:47:35.203+05:30  INFO 17640 --- [catalog-management] [http-nio-8080-exec-5] c.e.c.service.ProductService             : Adding product: Product(id=null, name=Samsung J2, brand=Samsung, description=8GB RAM, price=2000.0, quantity=1, category=Android, dateAdded=null)
+2024-08-03T12:49:24.442+05:30  WARN 17640 --- [catalog-management] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value]
+2024-08-03T12:52:17.690+05:30  INFO 17640 --- [catalog-management] [http-nio-8080-exec-10] c.e.c.service.ProductService             : Adding product: Product(id=null, name=, brand=, description=8GB RAM, price=500.0, quantity=1, category=Android, dateAdded=null)
+2024-08-03T12:52:17.726+05:30 ERROR 17640 --- [catalog-management] [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.ConstraintViolationException: Validation failed for classes [com.example.catalog_management.entity.Product] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Name is mandatory', propertyPath=name, rootBeanClass=class com.example.catalog_management.entity.Product, messageTemplate='Name is mandatory'}
+	ConstraintViolationImpl{interpolatedMessage='Brand is mandatory', propertyPath=brand, rootBeanClass=class com.example.catalog_management.entity.Product, messageTemplate='Brand is mandatory'}
+]] with root cause
+
+jakarta.validation.ConstraintViolationException: Validation failed for classes [com.example.catalog_management.entity.Product] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Name is mandatory', propertyPath=name, rootBeanClass=class com.example.catalog_management.entity.Product, messageTemplate='Name is mandatory'}
+	ConstraintViolationImpl{interpolatedMessage='Brand is mandatory', propertyPath=brand, rootBeanClass=class com.example.catalog_management.entity.Product, messageTemplate='Brand is mandatory'}
+]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:151) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:81) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:201) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:79) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:391) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:305) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:224) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:137) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364) ~[spring-orm-6.1.11.jar:6.1.11]
+	at jdk.proxy6/jdk.proxy6.$Proxy139.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319) ~[spring-orm-6.1.11.jar:6.1.11]
+	at jdk.proxy6/jdk.proxy6.$Proxy139.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:629) ~[spring-data-jpa-3.3.2.jar:3.3.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.11.jar:6.1.11]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.3.2.jar:3.3.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.11.jar:6.1.11]
+	at jdk.proxy6/jdk.proxy6.$Proxy141.save(Unknown Source) ~[na:na]
+	at com.example.catalog_management.service.ProductService.addProduct(ProductService.java:24) ~[classes/:na]
+	at com.example.catalog_management.controller.ProductController.createProduct(ProductController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2024-08-03T13:03:09.196+05:30  INFO 17640 --- [catalog-management] [http-nio-8080-exec-10] c.e.c.service.ProductService             : Adding product: Product(id=null, name=Samsung J1, brand=Samsung, description=8GB RAM, price=200.0, quantity=1, category=Android, dateAdded=null)
+2024-08-03T13:07:36.250+05:30  INFO 17640 --- [catalog-management] [http-nio-8080-exec-10] org.apache.tomcat.util.http.Parameters   : Invalid chunk starting at byte [0] and ending at byte [2] with a value of [=J] ignored
+ Note: further occurrences of Parameter errors will be logged at DEBUG level.
+2024-08-03T14:01:52.694+05:30  WARN 17640 --- [catalog-management] [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=42m22s851ms814µs600ns).
+2024-08-03T14:27:02.890+05:30  WARN 17640 --- [catalog-management] [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=15m10s38ms444µs800ns).
+2024-08-03T14:48:30.671+05:30  INFO 17640 --- [catalog-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T14:48:30.673+05:30  INFO 17640 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-08-03T14:48:30.681+05:30  INFO 17640 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-08-03T14:49:09.543+05:30  INFO 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Starting CatalogManagementApplication using Java 20.0.2 with PID 7524 (C:\Users\LENOVO\Downloads\catalog-management\catalog-management\target\classes started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T14:49:09.551+05:30 DEBUG 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T14:49:09.557+05:30  INFO 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T14:49:09.703+05:30  INFO 7524 --- [catalog-management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-03T14:49:09.704+05:30  INFO 7524 --- [catalog-management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-03T14:49:11.326+05:30  INFO 7524 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T14:49:11.442+05:30  INFO 7524 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interface.
+2024-08-03T14:49:12.927+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-03T14:49:12.952+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T14:49:12.953+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T14:49:13.052+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-03T14:49:13.053+05:30  INFO 7524 --- [catalog-management] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3347 ms
+2024-08-03T14:49:13.359+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T14:49:13.462+05:30  INFO 7524 --- [catalog-management] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T14:49:13.541+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T14:49:14.187+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T14:49:14.236+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T14:49:14.858+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c094ea5
+2024-08-03T14:49:14.861+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T14:49:14.944+05:30  WARN 7524 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T14:49:14.946+05:30  WARN 7524 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T14:49:16.604+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T14:49:16.695+05:30  INFO 7524 --- [catalog-management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T14:49:17.341+05:30  WARN 7524 --- [catalog-management] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T14:49:17.945+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T14:49:18.006+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-03T14:49:18.024+05:30  INFO 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Started CatalogManagementApplication in 9.386 seconds (process running for 10.488)
+2024-08-03T14:50:25.771+05:30  INFO 7524 --- [catalog-management] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-03T14:50:25.787+05:30  INFO 7524 --- [catalog-management] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-03T14:50:25.788+05:30  INFO 7524 --- [catalog-management] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-08-03T14:50:26.235+05:30  WARN 7524 --- [catalog-management] [http-nio-8080-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [com.example.catalog_management.exception.ResourceNotFoundException: Product not found with id: 2]
+2024-08-03T15:01:29.686+05:30  INFO 7524 --- [catalog-management] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-08-03T15:01:29.850+05:30  INFO 7524 --- [catalog-management] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:01:29.855+05:30  INFO 7524 --- [catalog-management] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T15:01:29.868+05:30  INFO 7524 --- [catalog-management] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T15:01:30.043+05:30  INFO 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Starting CatalogManagementApplication using Java 20.0.2 with PID 7524 (C:\Users\LENOVO\Downloads\catalog-management\catalog-management\target\classes started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:01:30.044+05:30 DEBUG 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:01:30.044+05:30  INFO 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:01:30.587+05:30  INFO 7524 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:01:30.602+05:30  INFO 7524 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2024-08-03T15:01:30.916+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-03T15:01:30.918+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T15:01:30.919+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T15:01:30.965+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-03T15:01:30.966+05:30  INFO 7524 --- [catalog-management] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 916 ms
+2024-08-03T15:01:31.027+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:01:31.033+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:01:31.052+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:01:31.054+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-08-03T15:01:31.082+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ca1727d
+2024-08-03T15:01:31.083+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-08-03T15:01:31.084+05:30  WARN 7524 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:01:31.085+05:30  WARN 7524 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:01:31.214+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:01:31.232+05:30  INFO 7524 --- [catalog-management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:01:31.244+05:30  WARN 7524 --- [catalog-management] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productController' defined in file [C:\Users\LENOVO\Downloads\catalog-management\catalog-management\target\classes\com\example\catalog_management\controller\ProductController.class]: Post-processing of merged bean definition failed
+2024-08-03T15:01:31.244+05:30  INFO 7524 --- [catalog-management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:01:31.245+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-08-03T15:01:31.251+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-08-03T15:01:31.251+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-03T15:01:31.260+05:30  INFO 7524 --- [catalog-management] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-03T15:01:31.297+05:30 ERROR 7524 --- [catalog-management] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productController' defined in file [C:\Users\LENOVO\Downloads\catalog-management\catalog-management\target\classes\com\example\catalog_management\controller\ProductController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar:3.3.2]
+	at com.example.catalog_management.CatalogManagementApplication.main(CatalogManagementApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.2.jar:3.3.2]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.catalog_management.controller.ProductController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@297318e1]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:757) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:436) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:417) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:376) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:353) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1103) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:574) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/example/catalog_management/service/ProductService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3397) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2468) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:752) ~[spring-core-6.1.11.jar:6.1.11]
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.catalog_management.service.ProductService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:496) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:475) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.3.2.jar:3.3.2]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 29 common frames omitted
+
+2024-08-03T15:01:37.904+05:30  INFO 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Starting CatalogManagementApplication using Java 20.0.2 with PID 7524 (C:\Users\LENOVO\Downloads\catalog-management\catalog-management\target\classes started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:01:37.905+05:30 DEBUG 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:01:37.906+05:30  INFO 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:01:38.273+05:30  INFO 7524 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:01:38.286+05:30  INFO 7524 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2024-08-03T15:01:38.516+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-03T15:01:38.519+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T15:01:38.520+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T15:01:38.574+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-08-03T15:01:38.575+05:30  INFO 7524 --- [catalog-management] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 663 ms
+2024-08-03T15:01:38.646+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:01:38.650+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:01:38.666+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:01:38.667+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-08-03T15:01:38.690+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68791dc
+2024-08-03T15:01:38.691+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-08-03T15:01:38.691+05:30  WARN 7524 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:01:38.692+05:30  WARN 7524 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:01:38.790+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:01:38.810+05:30  INFO 7524 --- [catalog-management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:01:38.995+05:30  WARN 7524 --- [catalog-management] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:01:39.192+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T15:01:39.228+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-03T15:01:39.236+05:30  INFO 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Started CatalogManagementApplication in 1.38 seconds (process running for 751.701)
+2024-08-03T15:01:39.241+05:30  INFO 7524 --- [catalog-management] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-03T15:01:45.378+05:30  INFO 5644 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Starting ProductServiceTest using Java 20.0.2 with PID 5644 (started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:01:45.380+05:30 DEBUG 5644 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:01:45.381+05:30  INFO 5644 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:01:46.758+05:30  INFO 5644 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:01:46.863+05:30  INFO 5644 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.
+2024-08-03T15:01:47.772+05:30  INFO 5644 --- [catalog-management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:01:47.885+05:30  INFO 5644 --- [catalog-management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T15:01:47.961+05:30  INFO 5644 --- [catalog-management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:01:48.745+05:30  INFO 5644 --- [catalog-management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:01:48.799+05:30  INFO 5644 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T15:01:49.483+05:30  INFO 5644 --- [catalog-management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25b74370
+2024-08-03T15:01:49.487+05:30  INFO 5644 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T15:01:49.570+05:30  WARN 5644 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:01:49.573+05:30  WARN 5644 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:01:51.364+05:30  INFO 5644 --- [catalog-management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:01:51.442+05:30  INFO 5644 --- [catalog-management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:01:52.361+05:30  WARN 5644 --- [catalog-management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:01:53.126+05:30  INFO 5644 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Started ProductServiceTest in 8.367 seconds (process running for 10.429)
+2024-08-03T15:01:54.944+05:30  INFO 5644 --- [catalog-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:01:54.948+05:30  INFO 5644 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T15:01:55.000+05:30  INFO 5644 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T15:05:48.493+05:30  INFO 7524 --- [catalog-management] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-08-03T15:05:48.648+05:30  INFO 7524 --- [catalog-management] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:05:48.649+05:30  INFO 7524 --- [catalog-management] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-08-03T15:05:48.659+05:30  INFO 7524 --- [catalog-management] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-08-03T15:05:48.802+05:30  INFO 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Starting CatalogManagementApplication using Java 20.0.2 with PID 7524 (C:\Users\LENOVO\Downloads\catalog-management\catalog-management\target\classes started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:05:48.802+05:30 DEBUG 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:05:48.802+05:30  INFO 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:05:49.080+05:30  INFO 7524 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:05:49.093+05:30  INFO 7524 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2024-08-03T15:05:49.249+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-03T15:05:49.251+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T15:05:49.251+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T15:05:49.299+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-08-03T15:05:49.300+05:30  INFO 7524 --- [catalog-management] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 494 ms
+2024-08-03T15:05:49.358+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:05:49.362+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:05:49.374+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:05:49.375+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-08-03T15:05:49.398+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ce0c831
+2024-08-03T15:05:49.399+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-08-03T15:05:49.401+05:30  WARN 7524 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:05:49.401+05:30  WARN 7524 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:05:49.480+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:05:49.491+05:30  INFO 7524 --- [catalog-management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:05:49.505+05:30  WARN 7524 --- [catalog-management] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productController' defined in file [C:\Users\LENOVO\Downloads\catalog-management\catalog-management\target\classes\com\example\catalog_management\controller\ProductController.class]: Post-processing of merged bean definition failed
+2024-08-03T15:05:49.507+05:30  INFO 7524 --- [catalog-management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:05:49.508+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-08-03T15:05:49.512+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-08-03T15:05:49.513+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-03T15:05:49.519+05:30  INFO 7524 --- [catalog-management] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-03T15:05:49.524+05:30 ERROR 7524 --- [catalog-management] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productController' defined in file [C:\Users\LENOVO\Downloads\catalog-management\catalog-management\target\classes\com\example\catalog_management\controller\ProductController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar:3.3.2]
+	at com.example.catalog_management.CatalogManagementApplication.main(CatalogManagementApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.2.jar:3.3.2]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.catalog_management.controller.ProductController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7db33b5d]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:757) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:436) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:417) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:376) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:353) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1103) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:574) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/example/catalog_management/service/ProductService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3397) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2468) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:752) ~[spring-core-6.1.11.jar:6.1.11]
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.catalog_management.service.ProductService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:496) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:475) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.3.2.jar:3.3.2]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 29 common frames omitted
+
+2024-08-03T15:05:54.126+05:30  INFO 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Starting CatalogManagementApplication using Java 20.0.2 with PID 7524 (C:\Users\LENOVO\Downloads\catalog-management\catalog-management\target\classes started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:05:54.127+05:30 DEBUG 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:05:54.128+05:30  INFO 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:05:54.869+05:30  INFO 7524 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:05:54.905+05:30  INFO 7524 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2024-08-03T15:05:55.292+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-03T15:05:55.294+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T15:05:55.294+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T15:05:55.325+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-08-03T15:05:55.325+05:30  INFO 7524 --- [catalog-management] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1193 ms
+2024-08-03T15:05:55.384+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:05:55.387+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:05:55.411+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:05:55.412+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-08-03T15:05:55.471+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6383e4cf
+2024-08-03T15:05:55.472+05:30  INFO 7524 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-08-03T15:05:55.473+05:30  WARN 7524 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:05:55.473+05:30  WARN 7524 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:05:55.572+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:05:55.584+05:30  INFO 7524 --- [catalog-management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:05:55.727+05:30  WARN 7524 --- [catalog-management] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:05:56.035+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T15:05:56.055+05:30  INFO 7524 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-03T15:05:56.062+05:30  INFO 7524 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Started CatalogManagementApplication in 2.029 seconds (process running for 1008.526)
+2024-08-03T15:05:56.064+05:30  INFO 7524 --- [catalog-management] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-03T15:05:57.631+05:30  INFO 9608 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Starting ProductServiceTest using Java 20.0.2 with PID 9608 (started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:05:57.634+05:30 DEBUG 9608 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:05:57.636+05:30  INFO 9608 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:05:59.213+05:30  INFO 9608 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:05:59.333+05:30  INFO 9608 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interface.
+2024-08-03T15:06:00.426+05:30  INFO 9608 --- [catalog-management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:06:00.572+05:30  INFO 9608 --- [catalog-management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T15:06:00.662+05:30  INFO 9608 --- [catalog-management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:06:01.555+05:30  INFO 9608 --- [catalog-management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:06:01.618+05:30  INFO 9608 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T15:06:02.468+05:30  INFO 9608 --- [catalog-management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c754401
+2024-08-03T15:06:02.474+05:30  INFO 9608 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T15:06:02.579+05:30  WARN 9608 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:06:02.586+05:30  WARN 9608 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:06:04.570+05:30  INFO 9608 --- [catalog-management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:06:04.670+05:30  INFO 9608 --- [catalog-management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:06:05.652+05:30  WARN 9608 --- [catalog-management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:06:06.706+05:30  INFO 9608 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Started ProductServiceTest in 9.817 seconds (process running for 13.408)
+2024-08-03T15:06:08.580+05:30  INFO 9608 --- [catalog-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:06:08.585+05:30  INFO 9608 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T15:06:08.614+05:30  INFO 9608 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T15:06:09.454+05:30  INFO 7524 --- [catalog-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:06:09.455+05:30  INFO 7524 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-08-03T15:06:09.473+05:30  INFO 7524 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-08-03T15:06:19.508+05:30  INFO 17576 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Starting CatalogManagementApplication using Java 20.0.2 with PID 17576 (C:\Users\LENOVO\Downloads\catalog-management\catalog-management\target\classes started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:06:19.512+05:30 DEBUG 17576 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:06:19.513+05:30  INFO 17576 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:06:19.649+05:30  INFO 17576 --- [catalog-management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-03T15:06:19.650+05:30  INFO 17576 --- [catalog-management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-03T15:06:21.337+05:30  INFO 17576 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:06:21.470+05:30  INFO 17576 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interface.
+2024-08-03T15:06:22.859+05:30  INFO 17576 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-03T15:06:22.886+05:30  INFO 17576 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T15:06:22.886+05:30  INFO 17576 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T15:06:22.986+05:30  INFO 17576 --- [catalog-management] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-03T15:06:22.986+05:30  INFO 17576 --- [catalog-management] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3335 ms
+2024-08-03T15:06:23.372+05:30  INFO 17576 --- [catalog-management] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:06:23.492+05:30  INFO 17576 --- [catalog-management] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T15:06:23.567+05:30  INFO 17576 --- [catalog-management] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:06:24.325+05:30  INFO 17576 --- [catalog-management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:06:24.386+05:30  INFO 17576 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T15:06:25.119+05:30  INFO 17576 --- [catalog-management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cab6144
+2024-08-03T15:06:25.124+05:30  INFO 17576 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T15:06:25.217+05:30  WARN 17576 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:06:25.220+05:30  WARN 17576 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:06:26.960+05:30  INFO 17576 --- [catalog-management] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:06:27.039+05:30  INFO 17576 --- [catalog-management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:06:27.782+05:30  WARN 17576 --- [catalog-management] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:06:28.489+05:30  INFO 17576 --- [catalog-management] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T15:06:28.553+05:30  INFO 17576 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-03T15:06:28.572+05:30  INFO 17576 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Started CatalogManagementApplication in 10.018 seconds (process running for 11.072)
+2024-08-03T15:07:15.666+05:30  INFO 14192 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Starting ProductServiceTest using Java 20.0.2 with PID 14192 (started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:07:15.668+05:30 DEBUG 14192 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:07:15.669+05:30  INFO 14192 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:07:17.084+05:30  INFO 14192 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:07:17.191+05:30  INFO 14192 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interface.
+2024-08-03T15:07:18.092+05:30  INFO 14192 --- [catalog-management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:07:18.219+05:30  INFO 14192 --- [catalog-management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T15:07:18.300+05:30  INFO 14192 --- [catalog-management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:07:19.103+05:30  INFO 14192 --- [catalog-management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:07:19.161+05:30  INFO 14192 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T15:07:19.872+05:30  INFO 14192 --- [catalog-management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49986178
+2024-08-03T15:07:19.877+05:30  INFO 14192 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T15:07:19.962+05:30  WARN 14192 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:07:19.966+05:30  WARN 14192 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:07:21.653+05:30  INFO 14192 --- [catalog-management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:07:21.748+05:30  INFO 14192 --- [catalog-management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:07:22.636+05:30  WARN 14192 --- [catalog-management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:07:23.367+05:30  INFO 14192 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Started ProductServiceTest in 8.325 seconds (process running for 10.527)
+2024-08-03T15:07:24.904+05:30  INFO 14192 --- [catalog-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:07:24.908+05:30  INFO 14192 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T15:07:24.936+05:30  INFO 14192 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T15:08:15.971+05:30  INFO 4972 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Starting ProductServiceTest using Java 20.0.2 with PID 4972 (started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:08:15.972+05:30 DEBUG 4972 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:08:15.974+05:30  INFO 4972 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:08:17.432+05:30  INFO 4972 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:08:17.553+05:30  INFO 4972 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 1 JPA repository interface.
+2024-08-03T15:08:18.617+05:30  INFO 4972 --- [catalog-management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:08:18.799+05:30  INFO 4972 --- [catalog-management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T15:08:18.879+05:30  INFO 4972 --- [catalog-management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:08:19.785+05:30  INFO 4972 --- [catalog-management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:08:19.842+05:30  INFO 4972 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T15:08:20.600+05:30  INFO 4972 --- [catalog-management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ce7394f
+2024-08-03T15:08:20.607+05:30  INFO 4972 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T15:08:20.732+05:30  WARN 4972 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:08:20.736+05:30  WARN 4972 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:08:22.439+05:30  INFO 4972 --- [catalog-management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:08:22.530+05:30  INFO 4972 --- [catalog-management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:08:23.393+05:30  WARN 4972 --- [catalog-management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:08:24.117+05:30  INFO 4972 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Started ProductServiceTest in 8.886 seconds (process running for 10.738)
+2024-08-03T15:08:25.745+05:30  INFO 4972 --- [catalog-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:08:25.751+05:30  INFO 4972 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T15:08:25.781+05:30  INFO 4972 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T15:08:38.613+05:30  INFO 19524 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Starting ProductServiceTest using Java 20.0.2 with PID 19524 (started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:08:38.616+05:30 DEBUG 19524 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:08:38.618+05:30  INFO 19524 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:08:40.023+05:30  INFO 19524 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:08:40.129+05:30  INFO 19524 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interface.
+2024-08-03T15:08:41.000+05:30  INFO 19524 --- [catalog-management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:08:41.117+05:30  INFO 19524 --- [catalog-management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T15:08:41.200+05:30  INFO 19524 --- [catalog-management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:08:42.061+05:30  INFO 19524 --- [catalog-management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:08:42.120+05:30  INFO 19524 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T15:08:42.822+05:30  INFO 19524 --- [catalog-management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15e8c040
+2024-08-03T15:08:42.825+05:30  INFO 19524 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T15:08:42.915+05:30  WARN 19524 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:08:42.918+05:30  WARN 19524 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:08:44.628+05:30  INFO 19524 --- [catalog-management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:08:44.707+05:30  INFO 19524 --- [catalog-management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:08:45.643+05:30  WARN 19524 --- [catalog-management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:08:46.368+05:30  INFO 19524 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Started ProductServiceTest in 8.353 seconds (process running for 10.376)
+2024-08-03T15:08:47.956+05:30  INFO 19524 --- [catalog-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:08:47.969+05:30  INFO 19524 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T15:08:47.998+05:30  INFO 19524 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T15:09:50.752+05:30  INFO 12528 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Starting ProductServiceTest using Java 20.0.2 with PID 12528 (started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:09:50.754+05:30 DEBUG 12528 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:09:50.757+05:30  INFO 12528 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:09:52.591+05:30  INFO 12528 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:09:52.695+05:30  INFO 12528 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interface.
+2024-08-03T15:09:53.658+05:30  INFO 12528 --- [catalog-management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:09:53.785+05:30  INFO 12528 --- [catalog-management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T15:09:53.859+05:30  INFO 12528 --- [catalog-management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:09:54.644+05:30  INFO 12528 --- [catalog-management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:09:54.702+05:30  INFO 12528 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T15:09:55.378+05:30  INFO 12528 --- [catalog-management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f012923
+2024-08-03T15:09:55.382+05:30  INFO 12528 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T15:09:55.466+05:30  WARN 12528 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:09:55.469+05:30  WARN 12528 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:09:57.273+05:30  INFO 12528 --- [catalog-management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:09:57.359+05:30  INFO 12528 --- [catalog-management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:09:58.262+05:30  WARN 12528 --- [catalog-management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:09:58.975+05:30  INFO 12528 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Started ProductServiceTest in 8.999 seconds (process running for 11.048)
+2024-08-03T15:10:00.606+05:30  INFO 12528 --- [catalog-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:10:00.611+05:30  INFO 12528 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T15:10:00.641+05:30  INFO 12528 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T15:11:58.761+05:30  INFO 14284 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Starting ProductServiceTest using Java 20.0.2 with PID 14284 (started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:11:58.763+05:30 DEBUG 14284 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:11:58.765+05:30  INFO 14284 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:12:00.298+05:30  INFO 14284 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:12:00.408+05:30  INFO 14284 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interface.
+2024-08-03T15:12:01.316+05:30  INFO 14284 --- [catalog-management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:12:01.447+05:30  INFO 14284 --- [catalog-management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T15:12:01.520+05:30  INFO 14284 --- [catalog-management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:12:02.322+05:30  INFO 14284 --- [catalog-management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:12:02.381+05:30  INFO 14284 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T15:12:03.103+05:30  INFO 14284 --- [catalog-management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15e8c040
+2024-08-03T15:12:03.107+05:30  INFO 14284 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T15:12:03.203+05:30  WARN 14284 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:12:03.208+05:30  WARN 14284 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:12:04.940+05:30  INFO 14284 --- [catalog-management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:12:05.021+05:30  INFO 14284 --- [catalog-management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:12:05.919+05:30  WARN 14284 --- [catalog-management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:12:06.618+05:30  INFO 14284 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Started ProductServiceTest in 8.563 seconds (process running for 10.516)
+2024-08-03T15:12:08.001+05:30  INFO 14284 --- [catalog-management] [main] c.e.c.service.ProductService             : Adding product: Product(id=null, name=null, brand=null, description=null, price=null, quantity=0, category=null, dateAdded=null)
+2024-08-03T15:12:08.118+05:30  INFO 14284 --- [catalog-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:12:08.123+05:30  INFO 14284 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T15:12:08.160+05:30  INFO 14284 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T15:12:50.621+05:30  INFO 13536 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Starting ProductServiceTest using Java 20.0.2 with PID 13536 (started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:12:50.623+05:30 DEBUG 13536 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:12:50.624+05:30  INFO 13536 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:12:52.431+05:30  INFO 13536 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:12:52.533+05:30  INFO 13536 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interface.
+2024-08-03T15:12:53.400+05:30  INFO 13536 --- [catalog-management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:12:53.507+05:30  INFO 13536 --- [catalog-management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T15:12:53.580+05:30  INFO 13536 --- [catalog-management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:12:54.336+05:30  INFO 13536 --- [catalog-management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:12:54.391+05:30  INFO 13536 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T15:12:55.057+05:30  INFO 13536 --- [catalog-management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10bdfbcc
+2024-08-03T15:12:55.061+05:30  INFO 13536 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T15:12:55.153+05:30  WARN 13536 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:12:55.156+05:30  WARN 13536 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:12:56.886+05:30  INFO 13536 --- [catalog-management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:12:56.964+05:30  INFO 13536 --- [catalog-management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:12:57.859+05:30  WARN 13536 --- [catalog-management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:12:58.572+05:30  INFO 13536 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Started ProductServiceTest in 8.677 seconds (process running for 10.539)
+2024-08-03T15:13:00.294+05:30  INFO 13536 --- [catalog-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:13:00.298+05:30  INFO 13536 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T15:13:00.328+05:30  INFO 13536 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T15:13:21.232+05:30  INFO 13240 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Starting ProductServiceTest using Java 20.0.2 with PID 13240 (started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:13:21.234+05:30 DEBUG 13240 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:13:21.235+05:30  INFO 13240 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:13:22.608+05:30  INFO 13240 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:13:22.712+05:30  INFO 13240 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interface.
+2024-08-03T15:13:23.586+05:30  INFO 13240 --- [catalog-management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:13:23.709+05:30  INFO 13240 --- [catalog-management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T15:13:23.780+05:30  INFO 13240 --- [catalog-management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:13:24.621+05:30  INFO 13240 --- [catalog-management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:13:24.677+05:30  INFO 13240 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T15:13:25.367+05:30  INFO 13240 --- [catalog-management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c674d58
+2024-08-03T15:13:25.371+05:30  INFO 13240 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T15:13:25.458+05:30  WARN 13240 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:13:25.461+05:30  WARN 13240 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:13:27.201+05:30  INFO 13240 --- [catalog-management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:13:27.289+05:30  INFO 13240 --- [catalog-management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:13:28.170+05:30  WARN 13240 --- [catalog-management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:13:28.911+05:30  INFO 13240 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Started ProductServiceTest in 8.286 seconds (process running for 10.21)
+2024-08-03T15:13:30.387+05:30  INFO 13240 --- [catalog-management] [main] c.e.c.service.ProductService             : Adding product: Product(id=null, name=null, brand=null, description=null, price=null, quantity=0, category=null, dateAdded=null)
+2024-08-03T15:13:30.808+05:30  INFO 13240 --- [catalog-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:13:30.812+05:30  INFO 13240 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T15:13:30.851+05:30  INFO 13240 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T15:14:35.229+05:30  INFO 18488 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Starting ProductServiceTest using Java 20.0.2 with PID 18488 (started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:14:35.230+05:30 DEBUG 18488 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:14:35.231+05:30  INFO 18488 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:14:36.639+05:30  INFO 18488 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:14:36.746+05:30  INFO 18488 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interface.
+2024-08-03T15:14:37.595+05:30  INFO 18488 --- [catalog-management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:14:37.712+05:30  INFO 18488 --- [catalog-management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T15:14:37.783+05:30  INFO 18488 --- [catalog-management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:14:38.550+05:30  INFO 18488 --- [catalog-management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:14:38.610+05:30  INFO 18488 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T15:14:39.316+05:30  INFO 18488 --- [catalog-management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60ed0b9d
+2024-08-03T15:14:39.321+05:30  INFO 18488 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T15:14:39.403+05:30  WARN 18488 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:14:39.405+05:30  WARN 18488 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:14:41.178+05:30  INFO 18488 --- [catalog-management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:14:41.271+05:30  INFO 18488 --- [catalog-management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:14:42.217+05:30  WARN 18488 --- [catalog-management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:14:42.930+05:30  INFO 18488 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Started ProductServiceTest in 8.293 seconds (process running for 10.098)
+2024-08-03T15:14:44.356+05:30  INFO 18488 --- [catalog-management] [main] c.e.c.service.ProductService             : Adding product: Product(id=null, name=null, brand=null, description=null, price=null, quantity=0, category=null, dateAdded=null)
+2024-08-03T15:14:44.676+05:30  INFO 18488 --- [catalog-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:14:44.683+05:30  INFO 18488 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T15:14:44.710+05:30  INFO 18488 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T15:15:10.485+05:30  INFO 21340 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Starting ProductServiceTest using Java 20.0.2 with PID 21340 (started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:15:10.488+05:30 DEBUG 21340 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:15:10.492+05:30  INFO 21340 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:15:12.104+05:30  INFO 21340 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:15:12.220+05:30  INFO 21340 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 1 JPA repository interface.
+2024-08-03T15:15:13.078+05:30  INFO 21340 --- [catalog-management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:15:13.230+05:30  INFO 21340 --- [catalog-management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T15:15:13.310+05:30  INFO 21340 --- [catalog-management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:15:14.080+05:30  INFO 21340 --- [catalog-management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:15:14.141+05:30  INFO 21340 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T15:15:14.833+05:30  INFO 21340 --- [catalog-management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38d42ab7
+2024-08-03T15:15:14.838+05:30  INFO 21340 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T15:15:14.927+05:30  WARN 21340 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:15:14.930+05:30  WARN 21340 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:15:16.673+05:30  INFO 21340 --- [catalog-management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:15:16.763+05:30  INFO 21340 --- [catalog-management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:15:17.599+05:30  WARN 21340 --- [catalog-management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:15:18.339+05:30  INFO 21340 --- [catalog-management] [main] c.e.c.service.ProductServiceTest         : Started ProductServiceTest in 8.484 seconds (process running for 10.291)
+2024-08-03T15:15:19.805+05:30  INFO 21340 --- [catalog-management] [main] c.e.c.service.ProductService             : Adding product: Product(id=null, name=null, brand=null, description=null, price=null, quantity=0, category=null, dateAdded=null)
+2024-08-03T15:15:20.068+05:30  INFO 21340 --- [catalog-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:15:20.082+05:30  INFO 21340 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T15:15:20.116+05:30  INFO 21340 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T15:17:24.773+05:30  INFO 22140 --- [catalog-management] [main] c.e.c.CatalogManagementApplicationTests  : Starting CatalogManagementApplicationTests using Java 20.0.2 with PID 22140 (started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:17:24.774+05:30 DEBUG 22140 --- [catalog-management] [main] c.e.c.CatalogManagementApplicationTests  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:17:24.777+05:30  INFO 22140 --- [catalog-management] [main] c.e.c.CatalogManagementApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:17:26.138+05:30  INFO 22140 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:17:26.240+05:30  INFO 22140 --- [catalog-management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interface.
+2024-08-03T15:17:27.121+05:30  INFO 22140 --- [catalog-management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:17:27.249+05:30  INFO 22140 --- [catalog-management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T15:17:27.337+05:30  INFO 22140 --- [catalog-management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:17:28.268+05:30  INFO 22140 --- [catalog-management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:17:28.356+05:30  INFO 22140 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T15:17:29.119+05:30  INFO 22140 --- [catalog-management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74ce7fdf
+2024-08-03T15:17:29.123+05:30  INFO 22140 --- [catalog-management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T15:17:29.204+05:30  WARN 22140 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:17:29.207+05:30  WARN 22140 --- [catalog-management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:17:30.970+05:30  INFO 22140 --- [catalog-management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:17:31.059+05:30  INFO 22140 --- [catalog-management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:17:32.024+05:30  WARN 22140 --- [catalog-management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:17:32.808+05:30  INFO 22140 --- [catalog-management] [main] c.e.c.CatalogManagementApplicationTests  : Started CatalogManagementApplicationTests in 8.664 seconds (process running for 10.468)
+2024-08-03T15:17:33.737+05:30  INFO 22140 --- [catalog-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:17:33.740+05:30  INFO 22140 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T15:17:33.757+05:30  INFO 22140 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T15:18:58.816+05:30  INFO 17576 --- [catalog-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:18:58.822+05:30  INFO 17576 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T15:18:58.844+05:30  INFO 17576 --- [catalog-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T15:19:14.185+05:30  INFO 8624 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Starting CatalogManagementApplication using Java 20.0.2 with PID 8624 (C:\Users\LENOVO\Downloads\catalog-management\catalog-management\target\classes started by LENOVO in C:\Users\LENOVO\Downloads\catalog-management\catalog-management)
+2024-08-03T15:19:14.187+05:30 DEBUG 8624 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-03T15:19:14.189+05:30  INFO 8624 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-08-03T15:19:14.287+05:30  INFO 8624 --- [catalog-management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-03T15:19:14.288+05:30  INFO 8624 --- [catalog-management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-03T15:19:15.702+05:30  INFO 8624 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T15:19:15.819+05:30  INFO 8624 --- [catalog-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interface.
+2024-08-03T15:19:17.039+05:30  INFO 8624 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-03T15:19:17.062+05:30  INFO 8624 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T15:19:17.062+05:30  INFO 8624 --- [catalog-management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T15:19:17.148+05:30  INFO 8624 --- [catalog-management] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-03T15:19:17.149+05:30  INFO 8624 --- [catalog-management] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2860 ms
+2024-08-03T15:19:17.448+05:30  INFO 8624 --- [catalog-management] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03T15:19:17.549+05:30  INFO 8624 --- [catalog-management] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-03T15:19:17.616+05:30  INFO 8624 --- [catalog-management] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-03T15:19:18.259+05:30  INFO 8624 --- [catalog-management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T15:19:18.306+05:30  INFO 8624 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T15:19:18.927+05:30  INFO 8624 --- [catalog-management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2faab64
+2024-08-03T15:19:18.932+05:30  INFO 8624 --- [catalog-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T15:19:19.020+05:30  WARN 8624 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-03T15:19:19.023+05:30  WARN 8624 --- [catalog-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-03T15:19:20.656+05:30  INFO 8624 --- [catalog-management] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03T15:19:20.733+05:30  INFO 8624 --- [catalog-management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T15:19:21.366+05:30  WARN 8624 --- [catalog-management] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T15:19:21.976+05:30  INFO 8624 --- [catalog-management] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T15:19:22.028+05:30  INFO 8624 --- [catalog-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-03T15:19:22.044+05:30  INFO 8624 --- [catalog-management] [restartedMain] c.e.c.CatalogManagementApplication       : Started CatalogManagementApplication in 8.664 seconds (process running for 9.554)
+2024-08-03T15:19:50.093+05:30  INFO 8624 --- [catalog-management] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-03T15:19:50.093+05:30  INFO 8624 --- [catalog-management] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-03T15:19:50.093+05:30  INFO 8624 --- [catalog-management] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-08-03T16:55:00.177+05:30  WARN 8624 --- [catalog-management] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h3m40s636ms887µs500ns).

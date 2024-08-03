@@ -1,8 +1,11 @@
 package com.example.catalog_management.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-import org.antlr.v4.runtime.misc.NotNull;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -14,7 +17,7 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Name is mandatory")
+    @NotBlank(message = "Name is mandatory") // only be applied to strings
     private String name;
 
     @NotBlank(message = "Brand is mandatory")
@@ -22,8 +25,8 @@ public class Product {
 
     private String description;
 
-    @NotNull(message = "Price is mandatory")
-    @DecimalMin(value = "0.0", inclusive = false, message = "Price must be greater than zero")
+    @NotNull(message = "Price is mandatory") // can be applied to any type
+    @DecimalMin(value = "0.0", inclusive = false, message = "Price must be greater than zero")// specify the minimum value for a numeric field
     private BigDecimal price;
 
     private int quantity;
